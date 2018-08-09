@@ -17,6 +17,9 @@ class NetworkManager: NSObject {
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             do {
+//                if let dict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject] {
+//                    print("Dict is \(dict)")
+//                }
                 let json = try JSONDecoder().decode(Json4Swift_Base.self, from: data)
                 completion!(json.results!)
             } catch {

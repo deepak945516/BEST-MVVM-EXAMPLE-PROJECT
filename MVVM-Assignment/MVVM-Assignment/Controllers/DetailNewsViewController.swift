@@ -11,10 +11,10 @@ import UIKit
 class DetailNewsViewController: UIViewController {
 
     // MARK: - IBOutlets
-    @IBOutlet weak var newsPhotoBackgroundView: UIView!
-    @IBOutlet weak var newsImageView: UIImageView!
-    @IBOutlet weak var newsAbstractLabel: UILabel!
-    @IBOutlet weak var newsCaptionLabel: UILabel!
+    @IBOutlet weak private var newsPhotoBackgroundView: UIView!
+    @IBOutlet weak private var newsImageView: UIImageView!
+    @IBOutlet weak private var newsAbstractLabel: UILabel!
+    @IBOutlet weak private var newsCaptionLabel: UILabel!
     @IBOutlet weak var detailNewsViewModel: DetaiNewsViewModel!
 
     // MARK: - Life Cycle Methods
@@ -31,13 +31,13 @@ class DetailNewsViewController: UIViewController {
 
     // MARK: - Private Methods
     private func initialSetup() {
-        self.view.showActivityIndicator()
         newsImageView.dropShadow(UIType: "UIImageView", cornerRadius: 10, shadowOffset: CGSize(width: 0, height: 0), shadowRadius: 10)
         // Set Data
-        if let data = try? Data(contentsOf: URL(string: self.detailNewsViewModel.detailNewsImageUrlString)!) {
-            self.newsImageView.image = UIImage(data: data)
-            self.view.hideActivityIndicator()
-        }
+        //        if let data = try? Data(contentsOf: URL(string: self.detailNewsViewModel.detailNewsImageUrlString)!) {
+        //            self.newsImageView.image = UIImage(data: data)
+        //            self.view.hideActivityIndicator()
+        //        }
+        self.newsImageView.kf.setImage(with: URL(string: self.detailNewsViewModel.detailNewsImageUrlString)!)
         newsAbstractLabel.text = self.detailNewsViewModel.detailNewsAbstract
         newsCaptionLabel.text = self.detailNewsViewModel.detailNewsPhotoCaption
     }

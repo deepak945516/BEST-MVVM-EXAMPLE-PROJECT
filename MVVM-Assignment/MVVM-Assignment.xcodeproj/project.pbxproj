@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A4E1B082113226800D406E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E1B072113226800D406E0 /* ProfileViewController.swift */; };
 		6A4F5E842105DF8A0080079D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F5E832105DF8A0080079D /* AppDelegate.swift */; };
 		6A4F5E862105DF8A0080079D /* TopStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F5E852105DF8A0080079D /* TopStoriesViewController.swift */; };
 		6A4F5E892105DF8A0080079D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F5E872105DF8A0080079D /* Main.storyboard */; };
@@ -22,9 +23,13 @@
 		6A4F5EAD2105EEF30080079D /* DetailNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F5EAC2105EEF30080079D /* DetailNewsViewController.swift */; };
 		6A4F5EB1210601580080079D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F5EB0210601580080079D /* ViewModel.swift */; };
 		6A53AA7A2107369A00A1B43A /* DetailNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A53AA792107369A00A1B43A /* DetailNewsViewModel.swift */; };
+		6A6E4F7B21147F37008975DF /* FullStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6E4F7A21147F37008975DF /* FullStoryViewController.swift */; };
+		99E4C9CAF8A06DBF95C345D0 /* Pods_MVVM_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD37526E3CD964EC9A4D2DB /* Pods_MVVM_Assignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A41C4B021195D8E00835DC0 /* MVVM-Assignment copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MVVM-Assignment copy-Info.plist"; path = "/Users/deepakkumar/Desktop/MVVM-Assignment/MVVM-Assignment copy-Info.plist"; sourceTree = "<absolute>"; };
+		6A4E1B072113226800D406E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6A4F5E802105DF8A0080079D /* MVVM-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4F5E832105DF8A0080079D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A4F5E852105DF8A0080079D /* TopStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +47,10 @@
 		6A4F5EAC2105EEF30080079D /* DetailNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsViewController.swift; sourceTree = "<group>"; };
 		6A4F5EB0210601580080079D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6A53AA792107369A00A1B43A /* DetailNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNewsViewModel.swift; sourceTree = "<group>"; };
+		6A6E4F7A21147F37008975DF /* FullStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullStoryViewController.swift; sourceTree = "<group>"; };
+		6FED49D3C1A66FFCD5F33150 /* Pods-MVVM-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-Assignment/Pods-MVVM-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		A9B7BD73C13E56149FE0D2D0 /* Pods-MVVM-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-Assignment/Pods-MVVM-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		EBD37526E3CD964EC9A4D2DB /* Pods_MVVM_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +58,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E4C9CAF8A06DBF95C345D0 /* Pods_MVVM_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CA87593639EC4F63D9C810B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9B7BD73C13E56149FE0D2D0 /* Pods-MVVM-Assignment.debug.xcconfig */,
+				6FED49D3C1A66FFCD5F33150 /* Pods-MVVM-Assignment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6A4F5E772105DF8A0080079D = {
 			isa = PBXGroup;
 			children = (
 				6A4F5E822105DF8A0080079D /* MVVM-Assignment */,
 				6A4F5E812105DF8A0080079D /* Products */,
+				6A41C4B021195D8E00835DC0 /* MVVM-Assignment copy-Info.plist */,
+				3CA87593639EC4F63D9C810B /* Pods */,
+				AE29936373553316231AD817 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +135,8 @@
 			children = (
 				6A4F5E852105DF8A0080079D /* TopStoriesViewController.swift */,
 				6A4F5EAC2105EEF30080079D /* DetailNewsViewController.swift */,
+				6A4E1B072113226800D406E0 /* ProfileViewController.swift */,
+				6A6E4F7A21147F37008975DF /* FullStoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +166,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AE29936373553316231AD817 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBD37526E3CD964EC9A4D2DB /* Pods_MVVM_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A4F5E922105DF910080079D /* Build configuration list for PBXNativeTarget "MVVM-Assignment" */;
 			buildPhases = (
+				9CF1541C010B5DCAD7BB87C9 /* [CP] Check Pods Manifest.lock */,
 				6A4F5E7C2105DF8A0080079D /* Sources */,
 				6A4F5E7D2105DF8A0080079D /* Frameworks */,
 				6A4F5E7E2105DF8A0080079D /* Resources */,
+				E57031CDA8147E6644F59049 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +243,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9CF1541C010B5DCAD7BB87C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E57031CDA8147E6644F59049 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MVVM-Assignment/Pods-MVVM-Assignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVM-Assignment/Pods-MVVM-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A4F5E7C2105DF8A0080079D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -220,7 +293,9 @@
 				6A4F5E862105DF8A0080079D /* TopStoriesViewController.swift in Sources */,
 				6A53AA7A2107369A00A1B43A /* DetailNewsViewModel.swift in Sources */,
 				6A4F5E842105DF8A0080079D /* AppDelegate.swift in Sources */,
+				6A4E1B082113226800D406E0 /* ProfileViewController.swift in Sources */,
 				6A4F5EAB2105EC830080079D /* UIExtensions.swift in Sources */,
+				6A6E4F7B21147F37008975DF /* FullStoryViewController.swift in Sources */,
 				6A4F5E9F2105E0D90080079D /* Multimedia.swift in Sources */,
 				6A4F5E9E2105E0D90080079D /* Json4Swift_Base.swift in Sources */,
 				6A4F5EA02105E0D90080079D /* Results.swift in Sources */,
@@ -366,6 +441,7 @@
 		};
 		6A4F5E932105DF910080079D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B7BD73C13E56149FE0D2D0 /* Pods-MVVM-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +459,7 @@
 		};
 		6A4F5E942105DF910080079D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FED49D3C1A66FFCD5F33150 /* Pods-MVVM-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

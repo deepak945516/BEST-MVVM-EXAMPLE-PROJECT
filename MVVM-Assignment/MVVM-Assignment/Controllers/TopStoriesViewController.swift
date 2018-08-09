@@ -11,8 +11,8 @@ import UIKit
 class TopStoriesViewController: UIViewController {
 
     // MARK: - IBOutlets
-    @IBOutlet weak var topStoriesTableView: UITableView!
-    @IBOutlet weak var viewModel: ViewModel!
+    @IBOutlet weak private var topStoriesTableView: UITableView!
+    @IBOutlet weak private var viewModel: ViewModel!
 
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
@@ -49,9 +49,8 @@ class TopStoriesViewController: UIViewController {
         topStoriesTableView.estimatedRowHeight = 150
         topStoriesTableView.rowHeight = UITableViewAutomaticDimension
         // Set underlined navigation bar title Title
-        let titleView = UILabel() // set other table properties
-        let navTitle = NSAttributedString(string: "Top Stories  ", attributes:
-            [.underlineStyle: NSUnderlineStyle.styleThick.rawValue, .underlineColor: viewModel.blueColor])
+        let titleView = UILabel()
+        let navTitle = NSAttributedString(string: "Top Stories  ", attributes: [.underlineStyle: NSUnderlineStyle.styleDouble.rawValue, .underlineColor: viewModel.blueColor])
         titleView.attributedText = navTitle
         //set title view to navigation
         self.navigationItem.titleView = titleView
@@ -59,7 +58,12 @@ class TopStoriesViewController: UIViewController {
 
     // MARK: - IBAction Methods
     @IBAction func newsTopicButtonTapped(_ sender: UIBarButtonItem) {
-
+        newsAPICall()
+        let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        guard let profileViewController = mainStoryboard.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController else {
+            return
+        }
+        self.navigationController?.pushViewController(profileViewController, animated: true)
     }
 }
 
@@ -92,6 +96,6 @@ extension TopStoriesViewController: UITableViewDelegate {
             detailNewsViewController.detailNewsViewModel.detailNewsData = viewModel.topNews?[indexPath.row]
             navigationController?.pushViewController(detailNewsViewController, animated: true)
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
-

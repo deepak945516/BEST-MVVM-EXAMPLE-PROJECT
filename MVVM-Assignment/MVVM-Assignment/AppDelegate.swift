@@ -12,10 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    //let tintColor: UIColor = UIColor(red: 195/255, green: 150/255, blue: 255/255, alpha: 1.0)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //customizeAppearance()
         return true
     }
 
@@ -40,6 +41,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
+    // MARK - App Theme Customization in app delegate
+
+//    private func customizeAppearance() {
+//        window?.tintColor = tintColor
+//        UISearchBar.appearance().barTintColor = tintColor
+//        UINavigationBar.appearance().barTintColor = tintColor
+//        UINavigationBar.appearance().tintColor = UIColor.white
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue):UIColor.white]
+//    }
 
 
 }

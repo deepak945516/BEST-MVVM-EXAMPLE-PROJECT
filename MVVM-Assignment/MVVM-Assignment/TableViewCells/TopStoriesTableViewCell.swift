@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TopStoriesTableViewCell: UITableViewCell {
 
@@ -26,7 +27,7 @@ class TopStoriesTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
-        self.contentView.backgroundColor = UIColor(red: 0/255, green: 150/255, blue: 255/255, alpha: 0.6)
+//        self.contentView.backgroundColor = UIColor(red: 0/255, green: 150/255, blue: 255/255, alpha: 0.6)
     }
 
     // MARK: - Private Methods
@@ -35,13 +36,14 @@ class TopStoriesTableViewCell: UITableViewCell {
     }
 
     func configureNewsCell(newsData: Results) {
-        DispatchQueue.global(qos: .default).async {
-            if let data = try? Data(contentsOf: URL(string: newsData.multimedia![0].url!)!){
-                DispatchQueue.main.async {
-                    self.newsImageView.image = UIImage(data: data)
-                }
-            }
-        }
+//        DispatchQueue.global(qos: .default).async {
+//            if let data = try? Data(contentsOf: URL(string: newsData.multimedia![0].url!)!){
+//                DispatchQueue.main.async {
+//                    self.newsImageView.image = UIImage(data: data)
+//                }
+//            }
+//        }
+        self.newsImageView.kf.setImage(with: URL(string: newsData.multimedia![0].url!)!)
         newsTitleLabel.text = newsData.title
         newsAbstractLabel.text = newsData.abstract
     }
